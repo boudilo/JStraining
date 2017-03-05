@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>JavaScript</title>
+    <title>Learning JS :)</title>
     <style>
         #rect {
             margin: 100px;
@@ -11,11 +11,33 @@
             height: 100px;
             background: #50c878;
         }
+        div {
+            margin: 10px;
+        }
     </style>
 </head>
 
 <body>
     <div id="rect"></div>
+
+    <div>
+        <form name="search">
+            <input type="text" name="key"></input>
+            <input type="submit" name="send" value="Отправить" />
+        </form>
+    </div>
+
+    <div>
+        <form name="sensorsSelection">
+            <select name="sensor" size="1">
+                <option value="fuel_level_sensor" selected="selected">Датчик уровня топлива</option>
+                <option value="ignition_sensor">Датчик зажигания</option>
+                <option value="voltage_sensor">Датчик напряжения</option>
+                <option value="temperature_sensor">Датчик температуры</option>
+            </select>
+        </form>
+    </div>
+
     <script src="js/myscript.js"></script>
 </body>
 
