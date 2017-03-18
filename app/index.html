@@ -5,29 +5,33 @@
     <meta charset="utf-8" />
     <title>Learning JS :)</title>
     <style>
-        #rect {
-            margin: 100px;
-            width: 100px;
-            height: 100px;
-            background: #50c878;
-        }
         div {
             margin: 10px;
+        }
+        
+        #cone {
+            width: 0px;
+            height: 0px;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-top: 100px solid red;
+            padding-bottom: 100px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
         }
     </style>
 </head>
 
 <body>
-    <div id="rect"></div>
-
     <div>
-        <form name="search">
+        <form name="phone">
             <input type="text" name="key"></input>
             <input type="submit" name="send" value="Отправить" />
         </form>
     </div>
 
-    <div>
+    <div id="sensors">
         <form name="sensorsSelection">
             <select name="sensor" size="1">
                 <option value="fuel_level_sensor" selected="selected">Датчик уровня топлива</option>
@@ -37,6 +41,9 @@
             </select>
         </form>
     </div>
+
+    <div id="cone"></div>
+
 
     <script src="js/myscript.js"></script>
 </body>
