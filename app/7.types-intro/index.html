@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        document.write(typeof undefined + "</br>"); // "undefined"
+        document.write(typeof 0 + "</br>"); // "number"
+        document.write(typeof true + "</br>"); // "boolean"
+        document.write(typeof "foo" + "</br>"); // "string"
+        document.write(typeof {} + "</br>"); // "object"
+        document.write(typeof null + "</br>"); // "object"  (1)
+        document.write(typeof function () { } + "</br>"); // "function"  (2)
+    </script>
+</body>
+
+</html>
