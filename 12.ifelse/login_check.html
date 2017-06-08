@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+       var login = prompt('Введите логин:', '')
+       if (login == null) {
+           alert('Ввод отменен.')
+       } else if (login != 'Админ') {
+           alert('Я Вас не знаю!')
+       } else {
+           var password = prompt('Введите пароль:', '')
+           if (password == null) {
+               alert('Ввод отменен.');
+           } else if (password != 'Черный Властелин') {
+               alert ('Пароль не верен!')
+           } else {
+               alert ('Добро пожаловать!')
+           }
+       }
+    </script>
+</body>
+
+</html>
