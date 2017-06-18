@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        // variant #1
+        while(true){
+            var num = prompt("Вариант №1.\r\nВведите число больше 100:", "");
+            if (num > 100 || num == null) {
+                break;
+            }
+        }
+
+        // variant #2
+        var num;
+        do {
+            num = prompt("Вариант №2.\r\nВведите число больше 100:", "");
+        } while (num < 100 && num != null)
+
+    </script>
+</body>
+
+</html>
