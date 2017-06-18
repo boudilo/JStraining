@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var fib = +prompt("Введите номер числа Фибоначи: ", "");
+
+        function bine(num) {
+            var f = (1 + Math.sqrt(5)) / 2;
+            return Math.round(f ** num / Math.sqrt(5));
+        }
+
+        alert("Число фибоначи: " + bine(fib));
+    </script>
+</body>
+
+</html>
